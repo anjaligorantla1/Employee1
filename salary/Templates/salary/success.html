@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:arial,sans-serif;
+            padding:40px;
+            text-align:center;
+            background-color:#C0C0C0;
+        }
+        .success-box{
+            background-color:#d4edda;
+            color:#155724;
+            border:1px solid #c3e6cb;
+            padding:30px;
+            border-radius:10px;
+            display:inline-block;
+        }
+        .btn{
+            margin-top:20px;
+            padding:10px 20px;
+            background:#28a745;
+            color:white;
+            text-decoration:none;
+            border-radius:6px;
+        }
+        .btn:hover{
+            background:#218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <h2>Employee added successfully</h2>
+        <p>Your data has been saved</p>
+        <a href="{% url "add_employee" %}" class="btn">Add Another Employee</a>
+        <a href="{% url "home" %}" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content:center;
+            align-item:center;
+            height:100vh;
+        }
+        .formdata{
+            width:100%;
+            max-width:600px;
+            padding:20px;
+            border:1px solid #ccc;
+            background-color:#f9f9f9;
+            text-align:center;
+            
+        }
+        h2{
+            text-align:center;
+
+        }
+    </style>
+</head>
+<body><
+    <div class="container">
+        <div class="formdata">
+            <h2>Add Employee</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+        </div>
+    </div>
+    
+</body>
+</html>
