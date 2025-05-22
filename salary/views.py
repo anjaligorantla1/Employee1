@@ -1,5 +1,5 @@
 from django.shortcuts import redirect, render
-
+from django.shortcuts import render
 from salary.forms import EmployeeForm
 from salary.models import Employee
 from django.contrib.auth.decorators import login_required
